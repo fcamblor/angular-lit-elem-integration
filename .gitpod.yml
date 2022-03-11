@@ -1,0 +1,9 @@
+tasks:
+  - init: npm ci && npm run build
+    command: npm run start
+
+ports:
+  - port: 4200
+    visibility: private
+    onOpen: open-preview
+    
